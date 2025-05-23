@@ -1,0 +1,470 @@
+<!--header.html-->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title></title>
+<script defer src="js/bundle.js"></script><script defer src="js/libs.js"></script><script defer src="js/style.js"></script><link href="css/style.min.css" rel="stylesheet"></head>
+<body>
+
+<header class="header">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-m-12">
+        <div class="admin-info">
+          <div class="admin-name">
+            <p>Admin</p>
+          </div>
+          <div class="admin-mail">
+            <p>info@mail.ru</p>
+          </div>
+        </div>
+        <button class="admin-logout">Выйти</button>
+      </div>
+      <div class="col-lg-3 col-md-6 col-m-12">
+        <div class="admin-item">
+          <div class="admin-item-content">
+            <div class="admin-item-title">Закрытых заявок</div>
+            <div class="admin-item-stat">
+              <p><span>350 </span> (75%)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-m-12">
+        <div class="admin-item">
+          <div class="admin-item-content">
+            <div class="admin-item-title">Открытых заявок</div>
+            <div class="admin-item-stat">
+              <p><span>36 </span> (25%)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-m-12">
+        <div class="admin-item">
+          <div class="admin-item-content">
+            <div class="admin-item-title">Всего доход</div>
+            <div class="admin-item-stat">
+              <p>35600 р.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="header-nav">
+    <div class="container">
+      <ul class="main-menu">
+        <li class="current">
+          <a href="#">Заявки <span>3</span></a>
+        </li>
+        <li>
+          <a href="#">Пользователи</a>
+        </li>
+        <li>
+          <a href="#">Мастера <span>3</span></a>
+        </li>
+        <li>
+          <a href="#">Новости</a>
+        </li>
+        <li class="item-has-children">
+          <a href="#">Настройки</a>
+          <ul>
+            <li>
+              <a href="#">Города</a>
+            </li>
+            <li>
+              <a href="#">Категории</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Статистика</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+
+
+
+<section class="admin-table-section admin-table-section-home">
+    <div class="container">
+        <div class="filters-block">
+            <div class="filter-title">Фильтр:</div>
+            <div class="filters">
+                <div class="custom-dropdown">
+                    <div class="dropdown-header">
+                        <span class="dropdown-title">Статус</span>
+                    </div>
+                    <div class="dropdown-content">
+                        <div class="dropdown-item">Категория</div>
+                        <div class="dropdown-item">Статус</div>
+                    </div>
+                </div>
+                <div class="custom-dropdown">
+                    <div class="dropdown-header">
+                        <span class="dropdown-title">Категория</span>
+                    </div>
+                    <div class="dropdown-content">
+                        <div class="dropdown-item">Категория</div>
+                        <div class="dropdown-item">Статус</div>
+                    </div>
+                </div>
+                <div class="custom-dropdown">
+                    <div class="dropdown-header">
+                        <span class="dropdown-title">Статус</span>
+                    </div>
+                    <div class="dropdown-content">
+                        <div class="dropdown-item">Категория</div>
+                        <div class="dropdown-item">Статус</div>
+                    </div>
+                </div>
+                <div class="filter-buttons">
+                    <button class="btn btn-grey">Применить</button>
+                    <button class="btn btn-grey">Очистить</button>
+                </div>
+            </div>
+        </div>
+        <div class="table-block">
+            <table>
+                <tr>
+                    <th>№</th>
+                    <th>
+                        <div class="th-name">Город <div class="sort-ico"></div></div>
+                    </th>
+                    <th>
+                        <div class="th-name">Дата открытия <div class="sort-ico"></div></div>
+                    </th>
+                    <th>
+                        <div class="th-name">Категория <div class="sort-ico"></div></div>
+                    </th>
+                    <th>
+                        <div class="th-name">Статус <div class="sort-ico"></div></div>
+                    </th>
+                    <th>Действия</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Москва</td>
+                    <td>01.01.2024</td>
+                    <td>Бытовая техника - Ремонт - Стиральные машины</td>
+                    <td>поиск мастера</td>
+                    <td>
+                        <div class="table-buttons">
+                            <button class="button-show open-modal-dialog" data-src="modal-order"></button>
+                            <button class="button-remove"></button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Москва</td>
+                    <td>01.01.2024</td>
+                    <td>Бытовая техника - Ремонт - Стиральные машины</td>
+                    <td>поиск мастера</td>
+                    <td>
+                        <div class="table-buttons">
+                            <button class="button-show open-modal-dialog" data-src="modal-order-approve"></button>
+                            <button class="button-remove"></button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!--footer.html-->
+</main>
+
+
+<div class="modal-dialog modal-dialog-centered modal-order">
+    <div class="modal-content">
+        <div class="modal-body">
+            <button type="button" class="modal-close d-none d-xl-inline-block" data-dismiss="modal" aria-label="Close"></button>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-m-12">
+                    <div class="order-title">№ <span>34</span></div>
+                    <div class="order-content">
+                        <p>Город: Москва</p>
+                        <p>Категория: Ремонт унитазов</p>
+                        <p>Дата и время: 22.02.2025 16:30</p>
+                        <p>Статус: поиск мастера</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-m-12">
+                    <div class="order-title">Данные заказчика</div>
+                    <div class="order-content">
+                        <p>Адрес: Москва, Садовая, 6, кв. 13</p>
+                        <p>Телефон: 88000000000</p>
+                        <p>Имя: Светлана</p>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-m-12">
+                    <div class="order-title order-title-user">Комментарий заказчика</div>
+                    <div class="order-description">
+                        <p>Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal-dialog modal-dialog-centered modal-order modal-order-approve">
+    <div class="modal-content">
+        <div class="modal-body">
+            <button type="button" class="modal-close d-none d-xl-inline-block" data-dismiss="modal" aria-label="Close"></button>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-m-12">
+                    <div class="order-title">№ <span>34</span></div>
+                    <div class="order-content">
+                        <p>Город: Москва</p>
+                        <p>Категория: Ремонт унитазов</p>
+                        <p>Дата и время: 22.02.2025 16:30</p>
+                        <p>Статус: поиск мастера</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-m-12">
+                    <div class="order-title">Данные заказчика</div>
+                    <div class="order-content">
+                        <p>Адрес: Москва, Садовая, 6, кв. 13</p>
+                        <p>Телефон: 88000000000</p>
+                        <p>Имя: Светлана</p>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-m-12 order-master">
+                    <div class="order-title">Данные Мастера</div>
+                    <div class="master-info">
+                        <div class="master-avatar">
+                            <img src="" alt="">
+                        </div>
+                        <div class="master-content">
+                            <div class="master-name">Иван Дмитриевич</div>
+                            <div class="master-rating">
+                                <div class="rating-ico"></div>
+                                <div class="rating-number">4.9 </div>
+                            </div>
+                            <div class="master-phone">Телефон:
+                                <a href="tel:+74503749933">+74503749933</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-m-12">
+                    <div class="order-title order-title-user">Комментарий заказчика</div>
+                    <div class="order-description">
+                        <p>Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст Текст текст </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal-dialog modal-dialog-centered modal-master">
+    <div class="modal-content">
+        <div class="modal-body">
+            <div class="master-modal-wrapper">
+                <div class="master-images">
+                    <div class="master-avatar">
+                        <img src="" alt="">
+                    </div>
+                    <div class="master-documents">
+                        <div class="title">Фото документов</div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12 col-m-12">
+                                <img src="" alt="">
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-m-12">
+                                <img src="" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="master-content">
+                    <div class="content-top">
+                        <div class="title">ID 3574 </div>
+                        <p>Город: <span>Москва</span></p>
+                        <p>Телефон: <span>88000000000</span></p>
+                        <p>E-mail: <span>info@mail.ru</span></p>
+                        <p>Имя: <span>Кирилл</span></p>
+                        <p>Фамилия: <span>Иванов</span></p>
+                        <p>Отчество: <span>Сергеевич</span></p>
+                        <p>Семейное положение: <span>женат</span></p>
+                        <p>Образование: <span>высшее</span></p>
+                        <p>Опыт работы: <span>5 лет</span></p>
+                        <p>Судимость: <span>нет</span></p>
+                    </div>
+                    <div class="content-bottom">
+                        <p><strong>Специализация:</strong></p>
+                        <p>ремонт холодильников</p>
+                        <p>ремонт стиральных машин</p>
+                        <p>установка духового шкафа</p>
+                        <p>установка розеток</p>
+                        <p>установка душевых кабин</p>
+                    </div>
+                </div>
+            </div>
+            <div class="master-edit">
+                <button class="btn btn-accept">Принять заявку</button>
+                <button class="btn btn-reject">Отклонить заявку</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal-dialog modal-dialog-centered modal-master modal-master-approve">
+    <div class="modal-content">
+        <div class="modal-body">
+            <div class="master-modal-wrapper">
+                <div class="master-images">
+                    <div class="master-avatar">
+                        <img src="" alt="">
+                    </div>
+                    <div class="master-documents">
+                        <div class="title">Фото документов</div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12 col-m-12">
+                                <img src="" alt="">
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-m-12">
+                                <img src="" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="master-content">
+                    <div class="content-top">
+                        <div class="title">ID 3574 </div>
+                        <p>Город: <span>Москва</span></p>
+                        <p>Телефон: <span>88000000000</span></p>
+                        <p>E-mail: <span>info@mail.ru</span></p>
+                        <p>Имя: <span>Кирилл</span></p>
+                        <p>Фамилия: <span>Иванов</span></p>
+                        <p>Отчество: <span>Сергеевич</span></p>
+                        <p>Семейное положение: <span>женат</span></p>
+                        <p>Образование: <span>высшее</span></p>
+                        <p>Опыт работы: <span>5 лет</span></p>
+                        <p>Судимость: <span>нет</span></p>
+                    </div>
+                    <div class="content-bottom">
+                        <p><strong>Специализация:</strong></p>
+                        <p>ремонт холодильников</p>
+                        <p>ремонт стиральных машин</p>
+                        <p>установка духового шкафа</p>
+                        <p>установка розеток</p>
+                        <p>установка душевых кабин</p>
+                    </div>
+                </div>
+            </div>
+            <div class="master-edit">
+                <div class="master-stats">
+                    <div class="title">Выполнено заявок:</div>
+                    <ul>
+                        <li>месяц: 24</li>
+                        <li>весь период: 126</li>
+                    </ul>
+                </div>
+                <button class="btn btn-reject">Удалить профиль</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal-dialog modal-dialog-centered modal-user">
+    <div class="modal-content">
+        <div class="modal-body">
+            <div class="title">ID 3574 </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-m-12">
+                    <div class="content-top">
+                        <p>Город: <span>Москва</span></p>
+                        <p>Телефон: <span>88000000000</span></p>
+                    </div>
+                    <div class="content-bottom">
+                        <p>Имя: <span>Кирилл</span></p>
+                        <p>Фамилия: <span>Иванов</span></p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-m-12">
+                    <div class="content-top">
+                        <p><strong>Оформлено заявок:</strong></p>
+                        <p>367</p>
+                    </div>
+                    <div class="content-bottom">
+                        <p><strong>Отмененных заявок:</strong></p>
+                        <p>3</p>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-m-12">
+                    <button class="btn btn-remove">Заблокировать и удалить аккаунт</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal-dialog modal-dialog-centered modal-category">
+    <div class="modal-content">
+        <div class="modal-body">
+            <form action="">
+                <div class="input-item">
+                    <div class="input-label">Наименование</div>
+                    <input type="text" placeholder="Духовые шкафы">
+                </div>
+                <div class="input-item">
+                    <div class="input-label">Родительская категория</div>
+                    <div class="custom-select">
+                        <div class="custom-select-header">
+                            <span class="custom-select-selected">Бытовая техника - Ремонт</span>
+                        </div>
+                        <div class="custom-select-options">
+                            <div class="custom-select-option" data-value="Бытовая техника - Ремонт">Бытовая техника - Ремонт</div>
+                            <div class="custom-select-option" data-value="Бытовая техника - Ремонт">Бытовая техника - Ремонт</div>
+                            <div class="custom-select-option" data-value="Бытовая техника - Ремонт">Бытовая техника - Ремонт</div>
+                            <div class="custom-select-option" data-value="Бытовая техника - Ремонт">Бытовая техника - Ремонт</div>
+                            <div class="custom-select-option" data-value="Бытовая техника - Ремонт">Бытовая техника - Ремонт</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-item">
+                    <button type="submit" class="btn btn-grey">Сохранить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal-dialog modal-dialog-centered modal-city">
+    <div class="modal-content">
+        <div class="modal-body">
+            <form action="">
+                <div class="input-item">
+                    <div class="input-label">Наименование</div>
+                    <input type="text" placeholder="Духовые шкафы">
+                </div>
+                <div class="input-item">
+                    <button type="submit" class="btn btn-grey">Сохранить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</body>
+</html>
+
