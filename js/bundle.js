@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
+
   document.querySelectorAll('.custom-dropdown .dropdown-item').forEach(item => {
     item.addEventListener('click', function (e) {
       e.stopPropagation();
@@ -28,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
 document.addEventListener('DOMContentLoaded', function () {
   var modalButtons = document.querySelectorAll('.open-modal-dialog'),
     overlay = document.querySelector('body'),
@@ -84,6 +86,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
 document.addEventListener('DOMContentLoaded', function () {
   const customButton = document.querySelector('.image-upload .custom-button');
   const fileInput = document.querySelector('.image-upload .file-input');
@@ -106,6 +109,7 @@ document.addEventListener('DOMContentLoaded', function () {
     reader.readAsDataURL(file);
   });
 });
+
 document.addEventListener('DOMContentLoaded', function () {
   const customSelects = document.querySelectorAll('.custom-select');
   customSelects.forEach(select => {
