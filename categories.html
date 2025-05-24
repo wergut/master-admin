@@ -74,30 +74,30 @@
     <div class="container">
       <ul class="main-menu">
         <li class="current">
-          <a href="#">Заявки <span>3</span></a>
+          <a href="/">Заявки <span>3</span></a>
         </li>
         <li>
-          <a href="#">Пользователи</a>
+          <a href="users.html">Пользователи</a>
         </li>
         <li>
-          <a href="#">Мастера <span>3</span></a>
+          <a href="masters.html">Мастера <span>3</span></a>
         </li>
         <li>
-          <a href="#">Новости</a>
+          <a href="news.html">Новости</a>
         </li>
         <li class="item-has-children">
           <a href="#">Настройки</a>
           <ul>
             <li>
-              <a href="#">Города</a>
+              <a href="cities.html">Города</a>
             </li>
             <li>
-              <a href="#">Категории</a>
+              <a href="categories.html">Категории</a>
             </li>
           </ul>
         </li>
         <li>
-          <a href="#">Статистика</a>
+          <a href="statistic.html">Статистика</a>
         </li>
       </ul>
     </div>
@@ -418,7 +418,7 @@
             <form action="">
                 <div class="input-item">
                     <div class="input-label">Наименование</div>
-                    <input type="text" placeholder="Духовые шкафы">
+                    <input type="text" placeholder="">
                 </div>
                 <div class="input-item">
                     <button type="submit" class="btn btn-grey">Сохранить</button>
@@ -428,7 +428,40 @@
     </div>
 </div>
 
+
+
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+    const ctx = document.getElementById('requestsChart');
+    new Chart(ctx, {
+        type: 'pie',
+        data: {
+            datasets: [{
+                data: [70, 30],
+                backgroundColor: ['#45B3AA', '#777776'],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            animation: {
+                duration: 0
+            },
+            plugins: {
+                title: {
+                    display: true,
+                    font: {
+                        size: 16
+                    }
+                },
+                legend: {
+                    position: 'bottom'
+                }
+            }
+        }
+    });
+</script>
 
 </body>
 </html>
